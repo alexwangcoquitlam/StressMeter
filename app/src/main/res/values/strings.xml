@@ -6,7 +6,15 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_home">Stress Meter</string>
+    <string name="menu_results">Results</string>
+
+    <string name="mainText">Touch the image that best captures how stressed you feel right now</string>
+    <string name="mainButton">More Images</string>
+
+    <string name="resultText">A graph showing your Stress Levels</string>
+    <string name="summaryText">Summary of Results</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
 </resources>

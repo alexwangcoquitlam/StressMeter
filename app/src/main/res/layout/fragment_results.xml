@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HomeFragment">
+    tools:context=".ResultsFragment">
 
     <TextView
         android:id="@+id/text_home"
@@ -14,24 +13,23 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/mainText"
+        android:text="@string/resultText"
         android:textAlignment="center"
         android:textStyle="bold"
         android:textSize="20sp"/>
 
-    <GridView
-        android:id="@+id/gridview"
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/chart"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.95"
-        android:numColumns="4" />
+        android:layout_height="200sp" />
 
-    <Button
-        android:id="@+id/button_home"
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0.025"
-        android:text="@string/mainButton" />
-
-    
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/summaryText"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 </LinearLayout>
