@@ -21,7 +21,7 @@
     <lecho.lib.hellocharts.view.LineChartView
         android:id="@+id/chart"
         android:layout_width="match_parent"
-        android:layout_height="200sp" />
+        android:layout_height="300sp" />
 
     <TextView
         android:layout_width="wrap_content"

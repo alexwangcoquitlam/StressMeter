@@ -7,6 +7,7 @@ import android.os.Environment
 import android.provider.Settings
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import java.io.File
 import java.io.FileOutputStream
@@ -44,6 +45,7 @@ class ConfirmationActivity : AppCompatActivity() {
 
         confirmBtn.setOnClickListener{
             saveRecord()
+            Toast.makeText(this, "Entry Recorded", Toast.LENGTH_LONG).show()
             this.finishAffinity()
         }
     }
