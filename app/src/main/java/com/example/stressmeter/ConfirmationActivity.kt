@@ -1,16 +1,18 @@
 package com.example.stressmeter
 
+import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.os.Environment
-import android.util.Log
+import android.provider.Settings
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import java.io.File
 import java.io.FileOutputStream
-import java.io.OutputStream
 import java.text.SimpleDateFormat
 import java.util.*
+
 
 class ConfirmationActivity : AppCompatActivity() {
     private lateinit var imgView: ImageView
