@@ -32,4 +32,33 @@
         android:text="@string/summaryText"
         android:textSize="20sp"
         android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_width="225dp"
+                android:text="Date"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_column="1"
+                android:text="Level"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </TableRow>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:id="@+id/summaryTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:stretchColumns="*" />
+        </ScrollView>
+    </TableLayout>
+
 </LinearLayout>

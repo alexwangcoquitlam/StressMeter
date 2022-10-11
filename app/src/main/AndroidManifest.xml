@@ -3,6 +3,8 @@
     package="com.example.stressmeter">
 
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -10,7 +12,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.StressMeter">
+        android:theme="@style/Theme.StressMeter"
+        android:requestLegacyExternalStorage="true">
         <activity android:name=".ConfirmationActivity"
             android:exported="true"></activity>
         <activity
